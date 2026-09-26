@@ -1,0 +1,25 @@
+# Python byte-compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+.env
+.venv/
+
+# Testing and coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Paper and non-code archive (keep local, do not push to public code repo)
+_manuscript_and_scratch_archive/
+
+# Logs and runtime traces
+*.log
+
+# OS-generated files
+.DS_Store
+Thumbs.db

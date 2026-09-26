@@ -1,0 +1,61 @@
+﻿defense_profiles:
+  - id: "none"
+    audit_anchor: false
+    prompt_reminder: false
+    verifier_gate: false
+    hard_lock: false
+    bayesian_filter: false
+
+  - id: "audit_anchor_control"
+    audit_anchor: true
+    prompt_reminder: false
+    verifier_gate: false
+    hard_lock: false
+    bayesian_filter: false
+
+  - id: "prompt_reminder_defense"
+    audit_anchor: true
+    prompt_reminder: true
+    verifier_gate: false
+    hard_lock: false
+    bayesian_filter: false
+
+  - id: "verifier_gate_deterministic"
+    audit_anchor: true
+    prompt_reminder: true
+    verifier_gate: true
+    hard_lock: false
+    bayesian_filter: false
+
+  - id: "hard_lock_ablation"
+    audit_anchor: true
+    prompt_reminder: false
+    verifier_gate: false
+    hard_lock: true
+    bayesian_filter: false
+
+  - id: "bayesian_trust_filter"
+    audit_anchor: true
+    prompt_reminder: true
+    verifier_gate: false
+    hard_lock: false
+    bayesian_filter: true
+    bayesian_params:
+      a0: 1.0
+      b0: 1.0
+      discount_lambda: 0.85
+      quarantine_threshold_tau: 0.35
+      min_observations: 3
+
+  - id: "full_6x2_defense_suite"
+    audit_anchor: true
+    prompt_reminder: true
+    verifier_gate: true
+    hard_lock: false
+    bayesian_filter: true
+    bayesian_params:
+      a0: 1.0
+      b0: 1.0
+      discount_lambda: 0.85
+      quarantine_threshold_tau: 0.35
+      min_observations: 3

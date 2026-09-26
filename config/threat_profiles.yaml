@@ -1,0 +1,78 @@
+﻿threat_profiles:
+  - id: "blind_round0_fixed"
+    knowledge: "blind"
+    onset: "round_0"
+    adaptivity: "fixed"
+    objective: "targeted_error"
+    influence_channels:
+      bare_answer: false
+      spurious_proof: true
+      authoritative_rhetoric: false
+      forced_confidence: true
+
+  - id: "blind_postanchor_adaptive"
+    knowledge: "blind"
+    onset: "post_anchor"
+    adaptivity: "round_adaptive"
+    objective: "targeted_error"
+    influence_channels:
+      bare_answer: false
+      spurious_proof: true
+      authoritative_rhetoric: true
+      forced_confidence: true
+
+  - id: "oracle_round0_adaptive"
+    knowledge: "oracle"
+    onset: "round_0"
+    adaptivity: "round_adaptive"
+    objective: "targeted_error"
+    influence_channels:
+      bare_answer: false
+      spurious_proof: true
+      authoritative_rhetoric: true
+      forced_confidence: true
+
+  - id: "oracle_postanchor_adaptive"
+    knowledge: "oracle"
+    onset: "post_anchor"
+    adaptivity: "round_adaptive"
+    objective: "targeted_error"
+    influence_channels:
+      bare_answer: false
+      spurious_proof: true
+      authoritative_rhetoric: true
+      forced_confidence: true
+
+  - id: "oracle_postanchor_bare"
+    knowledge: "oracle"
+    onset: "post_anchor"
+    adaptivity: "fixed"
+    objective: "targeted_error"
+    influence_channels:
+      bare_answer: true
+      spurious_proof: false
+      authoritative_rhetoric: false
+      forced_confidence: false
+
+  - id: "untargeted_confusion_adaptive"
+    knowledge: "oracle"
+    onset: "post_anchor"
+    adaptivity: "round_adaptive"
+    objective: "untargeted_disagreement"
+    influence_channels:
+      bare_answer: false
+      spurious_proof: true
+      authoritative_rhetoric: true
+      forced_confidence: true
+
+  - id: "sleeper_stage4a"
+    knowledge: "oracle"
+    onset: "sleeper"
+    adaptivity: "round_adaptive"
+    objective: "targeted_error"
+    sleeper_K: 5
+    influence_channels:
+      bare_answer: false
+      spurious_proof: true
+      authoritative_rhetoric: true
+      forced_confidence: true

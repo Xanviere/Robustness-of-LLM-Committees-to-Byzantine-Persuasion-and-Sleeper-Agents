@@ -1,0 +1,32 @@
+{
+  "study": "stage4_longitudinal_sleeper_dynamics",
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "sequences": 5,
+  "sequence_length": 10,
+  "burn_in_K": 4,
+  "total_spend_usd": 1.0345504000000003,
+  "pre_attack_honest_majority_acc": 1.0,
+  "post_activation_acc": {
+    "undefended_control": 0.8333,
+    "defended_quarantine": 0.8333,
+    "relative_accuracy_gain": 0.0
+  },
+  "quarantine_dynamics": {
+    "mean_task_quarantined": 4.6,
+    "quarantine_lag_after_activation": 0.5999999999999996
+  },
+  "piecewise_lmm_trust_decay": {
+    "beta_0_intercept": 0.31955225744539606,
+    "beta_1_pre_attack_accumulation": 0.019049499451943282,
+    "beta_2_immediate_activation_penalty": -0.0531544183815603,
+    "beta_3_post_activation_decay": -0.0464887554338076,
+    "pvalues": {
+      "Intercept": 2.964631651096912e-11,
+      "task_index": 0.15512934508507914,
+      "is_activated_step": 0.15638392270959198,
+      "t_hinge": 0.002215357658968898,
+      "Group Var": 0.21635709707136386
+    },
+    "converged": true
+  }
+}

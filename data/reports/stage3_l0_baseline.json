@@ -1,0 +1,31 @@
+{
+  "defense_id": "L0_hard_lock_ablation",
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "committee_size": 3,
+  "total_evaluated_items": 330,
+  "total_cost_usd": 0.0,
+  "tier1_operational": {
+    "clean_accuracy": 0.3273,
+    "attacked_accuracy": 0.3273,
+    "clean_terminal_error": 0.6727,
+    "attacked_terminal_error": 0.6727,
+    "tie_rate": 0.0
+  },
+  "tier2_causal_mechanism": {
+    "conditioned_population_size_m": 117,
+    "AAE": 0.0,
+    "VSR": 0.0,
+    "CCR": 0.0,
+    "AER": 0.1282,
+    "contingency_table": {
+      "n00": 102,
+      "n01": 0,
+      "n10": 0,
+      "n11": 15
+    },
+    "bootstrap_ci_95": [
+      0.0,
+      0.0
+    ]
+  }
+}

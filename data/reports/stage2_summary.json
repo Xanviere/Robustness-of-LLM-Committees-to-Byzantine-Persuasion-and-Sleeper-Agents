@@ -1,0 +1,36 @@
+{
+  "experiment_id": "stage2_primary_factorial",
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "manifest": "data/manifests/stage2_llama_110.jsonl",
+  "cost_summary": {
+    "total_calls": 32819,
+    "total_input_tokens": 42864888,
+    "total_output_tokens": 11200056,
+    "total_cost_usd": 57.8092,
+    "mean_latency_seconds": 5.773,
+    "spend_ceiling_usd": 750.0,
+    "spend_ceiling_exceeded": false
+  },
+  "condition_summaries": {
+    "N5_oracle_postanchor_adaptive": {
+      "N": 5,
+      "threat": "oracle_postanchor_adaptive",
+      "total_items": 330,
+      "clean_acc": 0.5182,
+      "attacked_acc": 0.4879,
+      "s_majority_yield": 0.36666666666666664,
+      "AAE": 0.0744,
+      "VSR": 0.0992,
+      "CCR": 0.0248,
+      "AER": 0.2314,
+      "p_harmful_revision": 0.0572,
+      "p_corrective_revision": 0.75,
+      "bootstrap_aae_mean": 0.0748,
+      "bootstrap_ci_lower": 0.0165,
+      "bootstrap_ci_upper": 0.1405,
+      "permutation_p_value": 0.031,
+      "bh_fdr_adjusted_p": 0.031,
+      "bh_fdr_significant": true
+    }
+  }
+}

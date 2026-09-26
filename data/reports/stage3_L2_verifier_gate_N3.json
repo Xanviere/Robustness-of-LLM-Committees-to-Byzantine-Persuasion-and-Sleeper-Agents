@@ -1,0 +1,32 @@
+{
+  "defense_key": "L2_verifier_gate",
+  "defense_id": "verifier_gate_deterministic",
+  "description": "Tier 2: Pre-Consensus Verifier Gate (SymPy math + Docker sandbox)",
+  "committee_size": 3,
+  "total_finished_trajectories": 330,
+  "cost_summary": {
+    "total_calls": 1980,
+    "total_input_tokens": 3591661,
+    "total_output_tokens": 584071,
+    "total_cost_usd": 4.3428,
+    "mean_latency_seconds": 7.688,
+    "spend_ceiling_usd": 750.0,
+    "spend_ceiling_exceeded": false
+  },
+  "tier1_operational": {
+    "clean_acc": 0.5758,
+    "attacked_acc": 0.4879,
+    "tie_rate": 0.0
+  },
+  "tier2_causal": {
+    "m": 114,
+    "AAE": 0.1491,
+    "VSR": 0.1667,
+    "CCR": 0.0175,
+    "AER": 0.193,
+    "bootstrap_ci_95": [
+      0.0789,
+      0.2281
+    ]
+  }
+}

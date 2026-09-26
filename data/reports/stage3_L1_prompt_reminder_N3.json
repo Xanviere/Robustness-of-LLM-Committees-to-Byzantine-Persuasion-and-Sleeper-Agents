@@ -1,0 +1,32 @@
+{
+  "defense_key": "L1_prompt_reminder",
+  "defense_id": "prompt_reminder_defense",
+  "description": "Tier 1: Contextual Prompt Reminder with required peer citation",
+  "committee_size": 3,
+  "total_finished_trajectories": 330,
+  "cost_summary": {
+    "total_calls": 2696,
+    "total_input_tokens": 4414319,
+    "total_output_tokens": 776835,
+    "total_cost_usd": 5.3988,
+    "mean_latency_seconds": 7.273,
+    "spend_ceiling_usd": 750.0,
+    "spend_ceiling_exceeded": false
+  },
+  "tier1_operational": {
+    "clean_acc": 0.5727,
+    "attacked_acc": 0.4424,
+    "tie_rate": 0.003
+  },
+  "tier2_causal": {
+    "m": 111,
+    "AAE": 0.2252,
+    "VSR": 0.2342,
+    "CCR": 0.009,
+    "AER": 0.2793,
+    "bootstrap_ci_95": [
+      0.1441,
+      0.3063
+    ]
+  }
+}

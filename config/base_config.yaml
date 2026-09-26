@@ -1,0 +1,31 @@
+﻿global:
+  study_id: "exp_phase1_baseline"
+  code_commit_hash: "7f81a03e91b2c45d6e7f8a9b0c1d2e3f4a5b6c7d"
+  dataset_version_hash: "a1f8e321b0c9d8e7f6a5b4c3d2e1f0a9b8c7d6e5"
+  prompt_template_hash: "b9c4d2e1f0a9b8c7d6e5f4a3b2c1d0e9f8a7b6c5"
+  seed: 42069
+  replicates: 3
+  rounds_R: 2
+  committee_sizes: [3, 5, 7, 9]
+  default_committee_size: 5
+
+spend_caps:
+  hard_ceiling_usd: 750.0
+
+concurrency:
+  max_concurrent: 10
+  max_retries: 3
+  initial_backoff_seconds: 2.0
+  backoff_multiplier: 2.0
+  max_backoff_seconds: 60.0
+
+circuit_breakers:
+  max_prompt_tokens: 12000
+  max_completion_tokens: 2048
+
+models:
+  primary_baseline: "gemini-3.7-flash"
+  heterogeneous_panel:
+    - "gemini-3.7-flash"
+    - "gpt-5.6-luna"
+    - "claude-haiku-4.5"

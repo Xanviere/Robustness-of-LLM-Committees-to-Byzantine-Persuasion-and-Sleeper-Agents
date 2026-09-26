@@ -1,0 +1,91 @@
+{
+  "experiment": "classical_byzantine_threshold_n5k2",
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "committee_size": 5,
+  "colluding_attackers": 2,
+  "byzantine_fraction": 0.4,
+  "adv_seats": [
+    3,
+    4
+  ],
+  "honest_seats": [
+    0,
+    1,
+    2
+  ],
+  "cost_summary": {
+    "total_calls": 3300,
+    "total_input_tokens": 6313650,
+    "total_output_tokens": 938455,
+    "total_cost_usd": 7.5422
+  },
+  "results": {
+    "total_trajectories": 330,
+    "clean_accuracy": 0.5667,
+    "attacked_accuracy": 0.4636,
+    "tie_rate": 0.1576,
+    "tier2_causal": {
+      "m": 128,
+      "n00_resilient": 93,
+      "n01_flipped_vsr": 25,
+      "n10_corrected_ccr": 0,
+      "n11_both_wrong": 10,
+      "VSR": 0.1953,
+      "CCR": 0.0,
+      "AAE": 0.1953,
+      "bootstrap_ci_95": [
+        0.1328,
+        0.2656
+      ],
+      "permutation_p_value": 0.0
+    },
+    "honest_agent_transitions": {
+      "stable_correct": 350,
+      "corrective_revision": 213,
+      "harmful_revision": 31,
+      "stable_wrong": 239,
+      "wrong_to_wrong": 157
+    },
+    "domain_breakdown": {
+      "math": {
+        "total_items": 110,
+        "clean_acc": 0.7091,
+        "attacked_acc": 0.6364,
+        "m": 30,
+        "n00": 28,
+        "n01": 2,
+        "n10": 0,
+        "n11": 0,
+        "VSR": 0.0667,
+        "CCR": 0.0,
+        "AAE": 0.0667
+      },
+      "lcb": {
+        "total_items": 110,
+        "clean_acc": 0.5727,
+        "attacked_acc": 0.4818,
+        "m": 49,
+        "n00": 39,
+        "n01": 9,
+        "n10": 0,
+        "n11": 1,
+        "VSR": 0.1837,
+        "CCR": 0.0,
+        "AAE": 0.1837
+      },
+      "humaneval": {
+        "total_items": 110,
+        "clean_acc": 0.4182,
+        "attacked_acc": 0.2727,
+        "m": 49,
+        "n00": 26,
+        "n01": 14,
+        "n10": 0,
+        "n11": 9,
+        "VSR": 0.2857,
+        "CCR": 0.0,
+        "AAE": 0.2857
+      }
+    }
+  }
+}

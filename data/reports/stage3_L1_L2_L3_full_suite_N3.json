@@ -1,0 +1,32 @@
+{
+  "defense_key": "L1_L2_L3_full_suite",
+  "defense_id": "full_6x2_defense_suite",
+  "description": "Full Defense-in-Depth Pipeline (L1 + L2 + L3)",
+  "committee_size": 3,
+  "total_finished_trajectories": 330,
+  "cost_summary": {
+    "total_calls": 1980,
+    "total_input_tokens": 3447402,
+    "total_output_tokens": 579584,
+    "total_cost_usd": 4.1881,
+    "mean_latency_seconds": 5.598,
+    "spend_ceiling_usd": 750.0,
+    "spend_ceiling_exceeded": false
+  },
+  "tier1_operational": {
+    "clean_acc": 0.5758,
+    "attacked_acc": 0.4909,
+    "tie_rate": 0.0
+  },
+  "tier2_causal": {
+    "m": 120,
+    "AAE": 0.1333,
+    "VSR": 0.15,
+    "CCR": 0.0167,
+    "AER": 0.1833,
+    "bootstrap_ci_95": [
+      0.0667,
+      0.2083
+    ]
+  }
+}
