@@ -6,8 +6,8 @@
 
 An asynchronous, production-grade research harness to benchmark the vulnerability of **Multi-Agent Large Language Model (LLM) Committees** under **Byzantine insider persuasion**, empirically test the classical distributed fault-tolerance bound ($f < N/3$), and evaluate multi-tier protocol defenses.
 
-This repository supports the research paper:  
-**"Robustness of LLM Committees to Static and Trust-Building Byzantine Agents"**  
+This repository contains the official codebase and experimental benchmarks for the research paper:  
+**"Robustness of LLM Committees to Static and Trust-Building Byzantine Agents"** *(Preprint / Under Review)*  
 *Utkarsh Srivastava, Avidha Halder, and Dr. Kathiravan Srinivasan*  
 Department of Computer Science and Engineering, Vellore Institute of Technology (VIT), Vellore, India.
 
@@ -301,15 +301,14 @@ To guarantee that evaluated code solutions cannot compromise host environments, 
 
 ## Citation
 
-If you use this research harness or findings in your work, please cite:
+If you use this research harness, data manifests, or findings in your work, please cite:
 
 ```bibtex
-@inproceedings{srivastava2027robustness,
-  author    = {Srivastava, Utkarsh and Halder, Avidha and Srinivasan, Kathiravan},
-  title     = {Robustness of {LLM} Committees to Static and Trust-Building Byzantine Agents},
-  booktitle = {Proceedings of the ACM Symposium on Applied Computing (SAC '27)},
-  year      = {2027},
-  address   = {Gwangju, South Korea},
-  publisher = {ACM}
+@misc{srivastava2026robustness,
+  author       = {Utkarsh Srivastava and Avidha Halder and Kathiravan Srinivasan},
+  title        = {Robustness of {LLM} Committees to Static and Trust-Building Byzantine Agents},
+  howpublished = {Preprint / Code Repository},
+  year         = {2026},
+  url          = {https://github.com/Xanviere/Robustness-of-LLM-Committees-to-Static-and-Trust-Building-Byzantine-Agents}
 }
 ```
